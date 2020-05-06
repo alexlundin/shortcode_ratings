@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Кнопка Like шорткодом by Alex Lundin
  * Description: Плагин позволяет создавать рейтинги и размещать и через шорткод как
- * Version:     1.0.2
+ * Version:     1.0.3
  * License:     GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Author: Alex Lundin
@@ -28,12 +28,7 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 //Optional: Set the branch that contains the stable release.
 // $myUpdateChecker- > > setBranch('master');
 
-require 'plugin-update-checker/plugin-update-checker.php';
-$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://alexlundin.com/wp-update-server?action=get_metadata&slug=shortcode_ratings_by_alex-lundin', //Metadata URL.
-    __FILE__, //Full path to the main plugin file.
-    'shortcode_ratings_by_alex-lundin' //Plugin slug. Usually it's the same as the name of the directory.
-);
+
 
 define('rating_path', plugin_dir_url(__FILE__));
 
