@@ -1,0 +1,54 @@
+.rating-wrap {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+.rating_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: Ubuntu, sans-serif;
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #26212e !important;
+    text-decoration: none !important;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rating_btn .icon {
+    display: inline-block;
+    margin-top: -6px;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    opacity: .7;
+    background: url(../images/like.svg) no-repeat center top;
+    background-size: cover;
+    transition: all .4s ease;
+}
+
+.rating_btn .count {
+    color: #26212e;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+.rating_btn:hover .icon {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .rating_btn .icon {
+        width: 30px;
+        height: 30px;
+    }
+    .rating_btn .count {
+        margin-left: 5px!important;
+    }
+}
